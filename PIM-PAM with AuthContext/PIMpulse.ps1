@@ -15,8 +15,8 @@ if (-not (Get-Module -Name Microsoft.Graph) -and -not (Get-Module -ListAvailable
     Install-Module Microsoft.Graph -Scope CurrentUser -Force
 }
 # ========================= 1) Config & Login =========================
-$clientId = "012da59a-c965-45d1-bbca-38cb8b16f550"
-$tenantId = "51eb883f-451f-4194-b108-4df354b35bf4"
+$clientId = "CLIENT_ID"
+$tenantId = "YOUR_TENNANT_ID"
 
 $claimsJson = '{"access_token":{"acrs":{"essential":true,"value":"c1"}}}'
 $extraParams = @{ "claims" = $claimsJson }
